@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    cout<<"Enter Index number: ";
+    cin>>x;
+    int a[x],i,n,index;
+    cout<<"Enter Index: ";
+    for(i=0;i<x;i++)
+    {
+        cin>>a[i];
+    }
+    cout <<endl<< "Enter your want number: ";
+    cin>>n;
+    for(i=0;i<x;i++)
+    {
+        if(a[i]==n)
+        {
+            index=i+1;
+            break;
+        }
+
+    }
+    if (a[i]!=n)
+        {
+            cout<<"Not Found";
+        }
+
+    else
+    cout <<endl<< "Your Index No:"<<index<<endl;
+
+    return 0;
+}
